@@ -24,3 +24,28 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+// Отримуємо посилання на список галереї
+const gallery = document.querySelector('.gallery');
+
+// Створюємо шаблон для всіх зображень
+const galleryItems = images.map(({ url, alt }) => {
+  return `<li class="gallery-item">
+            <img src="${url}" alt="${alt}" class="gallery-img">
+          </li>`;
+}).join('');
+
+// Додаємо всі елементи в DOM за одну операцію
+gallery.insertAdjacentHTML('beforeend', galleryItems);
+
+// Додаємо мінімальне оформлення галереї флексбоксами через CSS класи
+gallery.style.display = 'flex';
+gallery.style.flexWrap = 'wrap';
+gallery.style.gap = '10px';
+gallery.style.listStyle = 'none';
+
+const galleryImages = document.querySelectorAll('.gallery-img');
+galleryImages.forEach(image => {
+  image.style.width = '100%';
+  image.style.height = 'auto';
+});
