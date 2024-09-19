@@ -19,6 +19,10 @@ input {
         font-family: "Montserrat", sans-serif;
 }
 
+input:focus, input:hover {
+    border-color: black;
+}
+
 button[data-create] {
     width: 120px;
     height: 40px;
