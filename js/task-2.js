@@ -39,9 +39,8 @@ const galleryItems = images.map(({ url, alt }) => {
 gallery.insertAdjacentHTML('beforeend', galleryItems);
 
 // Додаємо мінімальне оформлення галереї флексбоксами через CSS класи
-gallery.style.display = 'flex';
-gallery.style.flexWrap = 'wrap';
-gallery.style.gap = '10px';
+gallery.style.display = 'grid';
+gallery.style.gap = '20px';
 gallery.style.listStyle = 'none';
 
 const galleryImages = document.querySelectorAll('.gallery-img');

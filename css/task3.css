@@ -1,0 +1,32 @@
+/* Загальні стилі для тіла сторінки */
+
+
+/* Стилі для input */
+input#name-input {
+    display: block;
+    width: 100%;
+    max-width: 408px;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin: 24px 24px 16px 24px;
+}
+
+/* Стилі для тексту привітання */
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin: 0 24px;
+}
+
+/* Стилі для span */
+#name-output {
+    color: #2e2f42;
+}

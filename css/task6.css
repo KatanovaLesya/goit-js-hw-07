@@ -1,0 +1,85 @@
+#controls {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction:row;
+    gap: 16px;
+    background-color: #f6f6fe;
+    padding: 32px;
+    margin-bottom: 16px;
+}
+
+input {
+        border: 1px solid #808080;
+        border-radius: 8px;
+        padding: 8px;
+        text-align: center;
+        width: 150px;
+        height: 40px;
+        font-family: "Montserrat", sans-serif;
+}
+
+button[data-create] {
+    width: 120px;
+    height: 40px;
+    background-color: #4e75ff;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button[data-destroy] {
+    width: 120px;
+    height: 40px;
+    background-color: #ff4e4e;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+#boxes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 44px;
+    flex-wrap: wrap;
+    background-color: #f6f6fe;
+    padding: 32px;
+}
+
+button[data-create]:hover {
+    background-color: #6c8cff;
+}
+
+button[data-destroy]:hover {
+    background-color: #ff7070;
+}
+
+/* Для браузерів на основі WebKit (Chrome, Safari, Edge) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Для Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
